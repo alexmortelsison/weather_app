@@ -41,6 +41,7 @@ dependencies:
   weather: ^3.1.1
   bloc: ^8.1.4
   equatable: ^2.0.5
+  flutter_bloc: ^8.1.5
   
 
 dev_dependencies:
