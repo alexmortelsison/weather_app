@@ -101,6 +101,7 @@ class _HomeScreenState extends State<HomeScreen> {
               BlocBuilder<WeatherBlocBloc, WeatherBlocState>(
                   builder: (context, state) {
                 if (state is WeatherBlocSuccess) {
+                  print(state.weather.tempFeelsLike);
                   return SizedBox(
                     width: MediaQuery.of(context).size.width,
                     height: MediaQuery.of(context).size.height,
@@ -129,7 +130,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             '${state.weather.temperature!.celsius!.round()}°C',
                             style: const TextStyle(
                               color: Colors.white,
-                              fontSize: 55,
+                              fontSize: 54,
                               fontWeight: FontWeight.w600,
                             ),
                           ),
